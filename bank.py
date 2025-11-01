@@ -2,7 +2,7 @@ class BankAccount:
     def __init__(self, account_holder):
         self.account_holder = account_holder
         self.balance = 0.0
-        self.transactions = []  # list for all transactions
+        self.transactions = []  
         self.undo_stack = []    # stack for undo
         self.redo_stack = []    # stack for redo
 
@@ -115,4 +115,5 @@ def main():
             print("❌ Invalid choice. Try again.")
 
 if __name__ == "__main__":
+
     main()
